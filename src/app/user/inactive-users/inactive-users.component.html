@@ -1,0 +1,6 @@
+Inactive User:<br>
+<div *ngFor="let user of activeUser">
+    <div *ngIf="!user.isActive">
+        {{user.name}} <button (click)="setActive(user)">active</button><br>
+    </div>
+</div>

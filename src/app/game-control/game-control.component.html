@@ -1,0 +1,13 @@
+<button (click)="startGame()">START the Game</button>
+<button (click)="stopGame()">STOP the Game</button>
+
+<div *ngFor="let item of [].constructor(second); let i = index">
+
+    In {{i}} th second:<br>
+    <app-odd [value]="i"></app-odd>
+    <app-even [value]="i"></app-even>
+</div>
+
+<!--  
+When starting the game, an event (holding a incrementing number) should get emitted each second (ref = setInterval()) 
+-->
